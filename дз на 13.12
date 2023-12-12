@@ -1,6 +1,6 @@
 x = int(input("Введите число: "))
 i = 2
-lol = 666
+lol = 1000
 while i < x:
     if x % i != 0:
         lol = 1
