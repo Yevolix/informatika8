@@ -1,8 +1,8 @@
-n = int(input("Введите число, чтобы узнать простое ли оно: "))
+x = int(input("Введите число: "))
 i = 2
 lol = 666
-while i < n:
-    if n % i != 0:
+while i < x:
+    if x % i != 0:
         lol = 1
     else:
         lol = 0
