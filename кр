@@ -1,0 +1,6 @@
+def from_base_24_to_base_10(number):
+    return int(number, 24)
+
+number_in_base_24 = input("Введите число в 24-ой системе: ")
+number_in_base_10 = from_base_24_to_base_10(number_in_base_24)
+print(f"Число {number_in_base_24} в 10-ой системе счисления: {number_in_base_10}
