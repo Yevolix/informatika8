@@ -1,0 +1,26 @@
+1ая задача
+
+x = 1
+while True:
+    if ((x > 3) and not(x < 4)) or (x < 1):
+        print("Наименьшее натуральное число x, для которого верно высказывание, равно:", x)
+        break
+    x += 1
+
+2ая задача
+
+def digit_sum(n):
+    return sum(int(d) for d in str(n))
+
+def find_max_digit_sum_numbers(numbers):
+    max_sum = max(digit_sum(num) for num in numbers)
+    return [num for num in numbers if digit_sum(num) == max_sum]
+
+numbers = [129, 4096, 789, 9876, 54761, 77, 9991, 10101]
+
+result = find_max_digit_sum_numbers(numbers)
+
+if len(result) == 0:
+    print("В последовательности нет чисел.")
+else:
+    print("Числа с максимальной суммой цифр:", result)
