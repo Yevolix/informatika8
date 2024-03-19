@@ -1,0 +1,13 @@
+def calculate_average(*args):
+    if len(args) == 0:
+        return None
+    total_sum = 0
+    count = 0
+    for arg in args:
+        total_sum += arg
+        count += 1
+
+    avg = total_sum / count
+    return avg
+result = calculate_average(1, 2, 3, 4, 5)
+print(result)
