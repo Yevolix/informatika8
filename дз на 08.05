@@ -1,0 +1,14 @@
+result = 4**3 * 3**19
+trinary_result = ""
+while result > 0:
+    trinary_result = str(result % 3) + trinary_result
+    result //= 3
+
+
+num_zeros = 0
+for digit in trinary_result:
+    if digit == "0":
+        num_zeros += 1
+
+
+print(f"Количество нулей в троичной записи: {num_zeros}")
